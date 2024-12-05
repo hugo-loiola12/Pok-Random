@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import "./App.css"; // Adicione um arquivo CSS separado para a estilização.
+import "./App.css";
 
 const typeColors = {
     normal: "#A8A77A",
@@ -58,7 +58,10 @@ const App = () => {
                     <h2 className="pokemon-name">{pokemon.name}</h2>
                     <img
                         className="pokemon-image"
-                        src={pokemon.sprites.front_default}
+                        src={
+                            pokemon.sprites.versions["generation-v"]["black-white"].animated
+                                .front_default || pokemon.sprites.front_default
+                        }
                         alt={pokemon.name}
                     />
                     <p className="pokemon-info">Altura: {pokemon.height}</p>
