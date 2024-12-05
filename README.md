@@ -60,7 +60,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
 ## 🖼️ Demonstração
 
-Adicione aqui uma captura de tela ou GIF mostrando o funcionamento do projeto.
+![img.png](public/img.png)
 
 ## 🔧 Estrutura do Projeto
 
