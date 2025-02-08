@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import myIcon from "../public/heart-svgrepo-com.svg";
 
 const typeColors = {
   normal: "#A8A77A",
@@ -90,6 +91,18 @@ const App = () => {
         </div>
       )}
       <p className="instructions">Clique na página para gerar outro Pokémon!</p>
+
+      <div className="footer">
+        <div className="footer-container">
+          <p className="footer-text">
+            Criado por{" "}
+            <a className="footer-link" href="https://github.com/hugo-loiola12">
+              Hugo
+            </a>
+            <img className="footer-icon" src={myIcon} alt="Ícone" />
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
