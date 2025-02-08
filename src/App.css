@@ -1,7 +1,7 @@
 /* Geral */
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background: linear-gradient(120deg, #f6d365, #fda085);
   color: #333;
   text-align: center;
@@ -83,7 +83,7 @@ body {
 /* Instruções */
 .instructions {
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
