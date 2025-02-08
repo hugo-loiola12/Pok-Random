@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 const typeColors = {
@@ -50,7 +50,12 @@ const App = () => {
     fetchRandomPokemon();
   };
 
-  if (loading) return <div className="loading">Carregando...</div>;
+  if (loading)
+    return (
+      <div className="app-container">
+        <div className="loading">Carregando...</div>
+      </div>
+    );
 
   return (
     <div className="app-container" onClick={handlePageClick}>
